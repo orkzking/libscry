@@ -5,7 +5,8 @@
 #include <dlfcn.h>
 #include <time.h>
 #include <iostream>
-#include <scry/scry.h>
+//#include <scry/scry.h>
+#include <scry.h>
 
 using namespace std;
 

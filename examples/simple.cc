@@ -4,7 +4,8 @@
 
 #include <dlfcn.h>
 #include <iostream>
-#include <scry/scry.h>
+//#include <scry/scry.h>
+#include <scry.h>
 
 using namespace std;
 
