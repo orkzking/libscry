@@ -8,7 +8,7 @@ project(libscry)
 
 add_library(libscry card.cc data.cc list.cc scry-private.cc scry-public.cc web.cc)
 
-target_link_libraries(libscry libcurl sqlite3 rapidjson dlfcn-win32::dl)
+target_link_libraries(libscry libcurl sqlite3 rapidjson ) #dlfcn-win32::dl
 
 # PUBLIC needed to make both hello.h and hello library available elsewhere in project
 target_include_directories(${PROJECT_NAME}
