@@ -23,8 +23,8 @@ jobs:
     - name: Get dependencies
       # Install dependencies in image
       run: sudo apt install sqlite3
-      run: sudo apt install RapidJSON
-      run: sudo apt install dlfcn
+           sudo apt install RapidJSON
+           sudo apt install dlfcn
 
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
