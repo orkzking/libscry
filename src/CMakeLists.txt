@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.11-3.18)
 
 project(libscry)
 
-find_package(sqlite3 CONFIG REQUIRED)
-find_package(RapidJSON CONFIG REQUIRED)
-find_package(dlfcn-win32 CONFIG REQUIRED)
+# find_package(sqlite3 CONFIG REQUIRED)
+# find_package(RapidJSON CONFIG REQUIRED)
+# find_package(dlfcn-win32 CONFIG REQUIRED)
 
 add_library(libscry card.cc data.cc list.cc scry-private.cc scry-public.cc web.cc)
 
