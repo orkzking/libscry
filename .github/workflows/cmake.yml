@@ -23,6 +23,10 @@ jobs:
     - name: Get dependencies for sqlite
       # Install dependencies in image
       run: sudo apt install sqlite3 libsqlite3-0 libsqlite3-dev
+      
+    - name: Get dwpendencies for rapidjson
+      # clone the repo
+      run: git clone https://github.com/Tencent/rapidjson.git && cd rapidjson && cmake --install
 
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
