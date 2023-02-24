@@ -6,6 +6,7 @@ project(
     DESCRIPTION "Mein Fork compiled with cmake"
 )
 
+if (WIN32)
 # Prefer static libs over shared lib
 LIST(REVERSE CMAKE_FIND_LIBRARY_SUFFIXES)
 #========== Add CPM package manager ================= 
@@ -31,6 +32,7 @@ CPMAddPackage(
 		"CMAKE_USE_LIBSSH2 OFF"
 		${CURL_PLATFORM_OPTIONS}
 )
+endif
 
 add_subdirectory(src)
 add_subdirectory(examples)
