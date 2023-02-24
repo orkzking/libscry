@@ -24,6 +24,10 @@ jobs:
       # Install dependencies in image
       run: sudo apt install sqlite3 libsqlite3-0 libsqlite3-dev
       
+    - name: Get dependencies for curl
+      # Install dependencies in image
+      run: sudo apt install curl libcurl4-openssl-dev
+      
     - name: Get dependencies for rapidjson
       # clone the repo
       run: git clone https://github.com/Tencent/rapidjson.git && cd rapidjson && cmake -B build && sudo cmake --install build
