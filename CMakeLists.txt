@@ -32,7 +32,7 @@ CPMAddPackage(
 		"CMAKE_USE_LIBSSH2 OFF"
 		${CURL_PLATFORM_OPTIONS}
 )
-endif
+endif (WIN32)
 
 add_subdirectory(src)
 add_subdirectory(examples)
