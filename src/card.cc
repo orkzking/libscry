@@ -63,6 +63,10 @@ string Card::price() {
   return data["prices"]["usd"].GetString();
 }
 
+string Card::priceEUR() {
+  return data["prices"]["eur"].GetString();
+}
+
 vector<string> Card::legality() {
   vector<string> output;
   output.push_back(data["legalities"]["standard"].GetString());

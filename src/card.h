@@ -39,6 +39,8 @@ class Card {
     virtual string set();
     ///Get the USD non-foil price of the most recent printing of the card
     virtual string price();
+    ///Get the EUR non-foil price of the most recent printing of the card
+    virtual string priceEUR();
     ///Get the legalities (for most formats) of the card
     virtual vector<string> legality();
   private:
