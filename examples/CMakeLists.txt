@@ -22,3 +22,14 @@ target_link_libraries(test
 
 target_compile_features(test PUBLIC cxx_std_20)
 
+project(pricecheck)
+
+add_executable(pricecheck pricecheck.cc)
+
+target_include_directories(pricecheck PUBLIC ../src)
+
+target_link_libraries(pricecheck
+	PRIVATE libscry)
+
+target_compile_features(pricecheck PUBLIC cxx_std_20)
+
