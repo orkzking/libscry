@@ -27,7 +27,7 @@ int main(int argc, char **argv)
   {
     lqueryrare = "set:mh2 r:r";
     lquerymythic = "set:mh2 r:m";
-    lset = "MH2"
+    lset = "MH2";
   }
   
   /* This block is what allows the library to be dynamic. */
@@ -43,6 +43,7 @@ int main(int argc, char **argv)
   
   List* searchRes = scry->cards_search(lquerymythic);
   vector<Card*> mythicsCards = searchRes->cards();
+  size_t i;
   cout << "price of all mythics from " << lset << "\n";
   for (i = 0; i < mythicsCards.size(); i++)
   {
