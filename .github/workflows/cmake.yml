@@ -43,8 +43,8 @@ jobs:
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
 
     - name: Run Examples
-      working-directory: ${{github.workspace}}/build
-      run: ./examples/${{env.BUILD_TYPE}}/simple && ./examples/${{env.BUILD_TYPE}}/testExe && ./examples/${{env.BUILD_TYPE}}/pricecheck
+      working-directory: ${{github.workspace}}/build/examples
+      run: ./simple && ./testExe && ./pricecheck
 
     - name: Test
       working-directory: ${{github.workspace}}/build
