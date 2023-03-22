@@ -57,5 +57,5 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Testresults
-        path: ${{github.workspace}}/build/Testing/Temporary/LastTest.log
+        path: ${{github.workspace}}/build
 
