@@ -48,8 +48,8 @@ jobs:
       run: ctest -C ${{env.BUILD_TYPE}}
     
     - name: Upload Testresults
-      working-directory: ${{github.workspace}}/build
       uses: actions/upload-artifact@v3
+      working-directory: ${{github.workspace}}/build
       with:
         name: Testresults
         path: Testing/Temporary/LastTest.log
