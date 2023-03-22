@@ -60,4 +60,6 @@ int main(int argc, char **argv)
   /* Prevents memory leaks.
      Without this line std::bad_alloc will be thrown. */
   destroy(scry);
+
+  return 0;
 }
