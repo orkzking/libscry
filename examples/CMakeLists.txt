@@ -11,16 +11,16 @@ target_link_libraries(simple
 
 target_compile_features(simple PUBLIC cxx_std_20)
 
-project(test)
+project(testExe)
 
-add_executable(test test.cc)
+add_executable(testExe test.cc)
 
-target_include_directories(test PUBLIC ../src)
+target_include_directories(testExe PUBLIC ../src)
 
-target_link_libraries(test
+target_link_libraries(testExe
 	PRIVATE libscry)
 
-target_compile_features(test PUBLIC cxx_std_20)
+target_compile_features(testExe PUBLIC cxx_std_20)
 
 project(pricecheck)
 
