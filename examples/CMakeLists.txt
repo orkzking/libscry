@@ -33,3 +33,5 @@ target_link_libraries(pricecheck
 
 target_compile_features(pricecheck PUBLIC cxx_std_20)
 
+add_test(Name PriceCheck COMMAND pricecheck)
+

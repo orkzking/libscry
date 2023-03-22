@@ -6,6 +6,8 @@ project(
     DESCRIPTION "Mein Fork compiled with cmake"
 )
 
+include(CTest)
+
 if (WIN32)
 # Prefer static libs over shared lib
 LIST(REVERSE CMAKE_FIND_LIBRARY_SUFFIXES)
