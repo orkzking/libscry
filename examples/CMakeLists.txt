@@ -7,7 +7,7 @@ add_executable(simple simple.cc)
 target_include_directories(simple PUBLIC ../src)
 
 target_link_libraries(simple
-    PRIVATE libscry)
+    PRIVATE scry)
 
 target_compile_features(simple PUBLIC cxx_std_20)
 
@@ -18,7 +18,7 @@ add_executable(testExe test.cc)
 target_include_directories(testExe PUBLIC ../src)
 
 target_link_libraries(testExe
-	PRIVATE libscry)
+	PRIVATE scry)
 
 target_compile_features(testExe PUBLIC cxx_std_20)
 
@@ -29,7 +29,7 @@ add_executable(pricecheck pricecheck.cc)
 target_include_directories(pricecheck PUBLIC ../src)
 
 target_link_libraries(pricecheck
-	PRIVATE libscry)
+	PRIVATE scry)
 
 target_compile_features(pricecheck PUBLIC cxx_std_20)
 
