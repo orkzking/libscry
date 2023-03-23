@@ -44,7 +44,7 @@ jobs:
 
     - name: Run Examples
       working-directory: ${{github.workspace}}/build/examples
-      run: ./simple && ./testExe && ./pricecheck
+      run: ./simple && ./pricecheck dmu
 
     - name: Test
       working-directory: ${{github.workspace}}/build
