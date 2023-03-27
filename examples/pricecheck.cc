@@ -51,7 +51,7 @@ int main(int argc, char **argv)
   }
   searchRes = scry->cards_search(lqueryrare);
   vector<Card*> raresCards = searchRes->cards();
-  cout << "price of all rares from " << lset << "\n";
+  cout << "\nprice of all rares from " << lset << "\n";
   for (i = 0; i < raresCards.size(); i++)
   {
     cout << raresCards[i]->name() << " price: " << raresCards[i]->priceEUR() << " Euro\n";
