@@ -64,7 +64,12 @@ string Card::price() {
 }
 
 string Card::priceEUR() {
-  return data["prices"]["eur"].GetString();
+  string lres = "unkown";
+  if(!data["prices"]["eur"].IsNull())
+  {
+    lres = data["prices"]["eur"].GetString();
+  }
+  return lres;
 }
 
 vector<string> Card::legality() {
